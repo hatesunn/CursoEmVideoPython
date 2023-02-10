@@ -6,9 +6,9 @@
 # leitura de dados
 num1 = int(input("Digite um valor: "))
 num2 = int(input("Digite outro valor: "))
-print(f"O primeiro valor digitado é {num1} e o segundo é {num2}.\n")
 
 # resultado
+print(f"O primeiro valor digitado é {num1} e o segundo é {num2}.\n")
 if num1 > num2:
     print(f"O primeiro valor({num1}) é maior.")
 elif num2 > num1:
