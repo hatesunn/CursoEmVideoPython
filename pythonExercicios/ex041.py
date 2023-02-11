@@ -8,23 +8,22 @@
 
 # import do ano atual
 from datetime import date
-hj = date.today()
-ano = hj.year
+ano = date.today().year
 
 # Entrada do ano do usuário
 nascimento = int(input("Digite seu ano de nascimento(AAAA): "))
 
 # Saída
 idade = ano - nascimento
-print(f"Sua idade é: {idade}")
+print(f"Sua idade é: {idade}.")
 print
 if idade <= 9:
     print("Sua categoria é : Mirim")
-elif 14 >= idade >9:
+elif idade <= 14:
     print("Sua categoria é: Infantil")
-elif 19 >= idade >14:
+elif idade <= 19:
     print("Sua categoria é: Junior")
-elif 20 == idade:
-    print("Sua categoria é: Senior")
+elif 25 <= idade:
+    print("Sua categoria é: Sênior")
 else:
     print("Sua categoria é: Master")

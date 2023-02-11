@@ -11,7 +11,7 @@ media = (nota1 + nota2) / 2
 
 if media < 5:
     print(f"Sua média final é {media:.2f}. \033[31mVocê está reprovado!\033[m")
-elif 6.9 > media > 5:
+elif 7 > media >= 5:
     print(f"Sua média final é {media:.2f}. \033[33mVocê está de recuperação!\033[m")
 else:
     print(f"Sua média final é {media:.2f}. \033[32mVocê está aprovado!\033[m")
