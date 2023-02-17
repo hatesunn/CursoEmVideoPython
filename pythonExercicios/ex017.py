@@ -11,6 +11,6 @@
 import math
 
 co = float(input('Comprimento do cateto oposto: '))
-ca = float(input('Comprimento do cateto oposot: '))
+ca = float(input('Comprimento do cateto oposto: '))
 hi = math.hypot(co, ca)
 print(f'A hipotenusa vai medir {hi:.2f}')
