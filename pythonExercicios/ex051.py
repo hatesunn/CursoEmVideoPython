@@ -6,5 +6,6 @@ No final, mostre os 10 primeiros termos dessa progressão.
 print("-="*10,"Progressão Aritmética","-="*10)
 a1 = int(input("Digite o primeiro termo da PA: "))
 r = int(input("Digite a razão da PA: "))
-for c in range(a1, r*10+1 , r):
-    print(c)
+for c in range(a1, a1+(10-1)*r , r):
+    print(c, end="-> ")
+print("Acabou")

@@ -4,8 +4,10 @@ NÚMEROS ÍMPARES que são MULTIPLOS DE TRÊS e que
 se encontram no intervalo de 1 até 500.
 
 """
-
-for n in range(0, 10, 3):
-    if n % 2 != 0:
-        s = 0 + n
-print(s)
+s = 0
+c = 0
+for n in range(1, 501, 2):
+    if n % 3 == 0:
+        c = c + 1
+        s = s + n
+print(f"A soma de todos os {c} valores solicitados é {s}")

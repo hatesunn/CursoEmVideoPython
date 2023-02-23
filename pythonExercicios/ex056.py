@@ -5,16 +5,26 @@ No final do programa mostre:
 - Qual é o nome do homem mais velho.
 - Quantas mulheres tem menos de 20 anos
 """
-mIdade = 0
-m20 = 0
-velho = "Ninguém"
-for d in range(0,4):
-    nome = input("Digite seu nome: ")
-    idade = int(input("Digite sua idade: "))
-    sexo = input("Sexo(M= Masculino e F= Feminino): ")
-    mIdade += idade
-    if sexo == "F" and idade < 20:
-        m20 += 1
-    if sexo == "M"
-    
-        
+
+id = 0
+mulher = 0
+media = 0
+homem = "Não tem homem."
+# Loop para ler informações das 4 pessoas
+for i in range(4):
+    print(f"Digite as informações da {i+1}ª pessoa:")
+    nome = input("Nome: ")
+    idade = int(input("Idade: "))
+    sexo = input("Sexo (M/F): ").upper()
+    media += idade
+    if sexo == "M":
+        if idade > id or id == 0 :
+            id = idade
+            homem = nome
+    elif sexo == "F":
+        if idade < 20:
+            mulher += 1
+
+print(f"""A média de idade é {media/4:.2f} anos.
+     O homem mais velho é o {homem}.
+     Existem {mulher} mulheres abaixo de 20 anos.""")
