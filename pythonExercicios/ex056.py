@@ -26,5 +26,5 @@ for i in range(4):
             mulher += 1
 
 print(f"""A média de idade é {media/4:.2f} anos.
-     O homem mais velho é o {homem}.
+     O homem mais velho é o {homem} com {id} anos.
      Existem {mulher} mulheres abaixo de 20 anos.""")

@@ -8,8 +8,8 @@ from datetime import date as dt
 maior = 0
 menor = 0
 hj = dt.today().year
-for a in range(0, 8):
-    ano = int(input("Digite seu ano de nascimento: "))
+for a in range(1, 8):
+    ano = int(input(f"Ano nascimento da {a}ª pessoa: "))
     if ano <= (hj - 21):
         maior += 1
     else:
