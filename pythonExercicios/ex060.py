@@ -13,6 +13,6 @@ if num <= 1:
 else:
     while n < n1:
         n += 1 
-        num = num * fat
-        fat = fat - 1 
+        num *= fat
+        fat -= 1
 print(num)

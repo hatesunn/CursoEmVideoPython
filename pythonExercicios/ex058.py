@@ -20,10 +20,13 @@ print("Processando...")
 sleep(1.3)
 if jogador == cpu:
     print("\033[32mIMPRESSIONANTE! Você acertou o número de primeira!! Muito bem! Parabéns!\033[m")
-    exit()
 else:
     while jogador != cpu:
         print("\033[31mNúmero errado\033[m.")
+        if jogador > cpu:
+            print("Número é menor...")
+        else:
+            print("Número é maior...")
         novo = input("Tentar novamente (S/N)? ").upper()
         while novo != 'S' and novo != 'N':
             novo = input("Opção inválida. Deseja tentar novamente (S/N)? ").upper()
@@ -39,7 +42,5 @@ else:
                 print(f"Que pena, você não acertou. Você saiu com {tentativas} tentativas.")
             else:
                 print(f"Que pena, você não acertou. Você saiu com {tentativas} tentativa.")
-            exit()
     print("\033[32mAcertou o número! Parabéns!\033[m")
     print(f"Você acertou com {tentativas} tentativas.")
-    exit()

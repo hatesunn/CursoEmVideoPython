@@ -9,6 +9,6 @@ r = int(input("Digite a razão da PA: "))
 a10 = 0
 while a10 < 10:
    print (a1, end="-> ")
-   a1 = a1 + r
+   a1 += r
    a10 += 1
 print("Acabou")
