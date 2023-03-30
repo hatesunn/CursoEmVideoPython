@@ -24,4 +24,3 @@ while cont == "S":
         cont = input("Opção inválida. Deseja continuar(S/N)? ").upper()
 media = n1 / qtd
 print(f"A média dos valores digitados é: {media:.2f}. O menor número foi {menor} e o maior foi {maior}.")
-

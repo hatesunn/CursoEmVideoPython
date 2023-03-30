@@ -7,8 +7,8 @@ No final, mostre quantos números foram digitados e qual foi a soma entre eles.
 
 n = int(input("Digite um número(999 para parar): "))
 vlr = qtd = 0
-while n != 99:
+while n != 999:
     vlr += n
     qtd += 1
     n = int(input("Digite um número(999 para parar): "))
-print(f"Foram digitados {qtd} números até o número 99. A soma total desses números é {vlr}.")
+print(f"Foram digitados {qtd} números até o número 999. A soma total desses números é {vlr}.")
