@@ -8,5 +8,6 @@ while n >= 0:
     n = int(input("Digite um número: "))
     if n < 0:
         break
-    for t in 10:
+    for t in range(11):
         print(f"{n} x {t} = {n*t}")
+print("Encerrando...")
