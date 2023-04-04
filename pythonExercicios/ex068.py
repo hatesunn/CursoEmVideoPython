@@ -7,9 +7,9 @@ import random
 vitorias = 0
 while True:
     n = int(input("Digite um valor: "))
-    par_impar = ""
+    par_impar = " "
     while par_impar not in "PI":
-        par_impar = str(input("Você quer par ou ímpar? ")).strip.upper()[0]
+        par_impar = str(input("Você quer par ou ímpar? ")).strip().upper()[0]
     cpu = random.randint(1,2)
     soma = n + cpu
     if par_impar == "P":
