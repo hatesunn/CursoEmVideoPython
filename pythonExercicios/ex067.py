@@ -3,9 +3,8 @@ Faça um programa que mostre a tabuada de vários números, um de cada vez, para
 O programa será interrompido quando o número solicitado for negativo.
 """
 
-n = 0
-while n >= 0:
-    n = int(input("Digite um número: "))
+while True:
+    n = int(input("\nDigite um número: "))
     if n < 0:
         break
     for t in range(11):
