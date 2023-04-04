@@ -6,7 +6,9 @@ Seu programa deverá ler um número pelo teclado(entre 0 e 20) e mostrá-lo por 
 
 n = ("Zero", "Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez", 
      "Onze", "Doze", "Treze", "Quartoze", "Quinze", "Dezesseis", "Dezessete", "Dezoito", "Dezenove", "Vinte")
-l = 0
-while l in (0,20):
+while True:
     l = int(input("Digite um número: "))
+    if 0 <= l <= 20:
+        break
 print(n[l])
+print("Finalizando...")
