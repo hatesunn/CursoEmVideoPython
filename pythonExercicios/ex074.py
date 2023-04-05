@@ -5,12 +5,11 @@ valor que estão na tupla.
 """
 
 from random import randint
-a = randint(0,10)
-b = randint(0,10)
-c = randint(0,10)
-d = randint(0,10)
-e = randint(0,10)
-f = (a , b, c, d, e)
-print(f"5 numeros aleatórios: {f}")
-print(f"O menor número é : {min(f)}")
-print(f"O maior número é {max(f)}")
+num = ()
+for n in range(5):
+    f = randint(0,10)
+    num += (f,)
+
+print(f"5 numeros aleatórios: {num}")
+print(f"O menor número é : {min(num)}")
+print(f"O maior número é : {max(num)}")
