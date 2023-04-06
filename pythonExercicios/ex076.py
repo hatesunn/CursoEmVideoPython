@@ -8,8 +8,8 @@ tabela = ("Café", 3, "Chocolate", 5.50, "Pão na chapa", 2.50)
 print("-"*58)
 print("{:^60}".format(" Tabela de preços "))
 print("-"*58)
-print(f"""
-{tabela[0]}...............................................R$ {tabela[1]:.2f}
-{tabela[2]}..........................................R$ {tabela[3]:.2f}
-{tabela[4]}.......................................R$ {tabela[5]:.2f}
-""")
+for pos in range(0, len(tabela)):
+    if pos % 2 == 0:
+        print(f"{tabela[pos]:.<49}", end="")
+    else:
+        print(f"R${tabela[pos]:>7.2f}")
