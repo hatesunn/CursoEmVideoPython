@@ -6,13 +6,10 @@ B) Em que posição foi digitado o primeiro valor 3;
 c) Quais foram os números pares.
 """
 
-n = ()
-par = ()
+n = impar = ()
 for i in range(4):
     x = int(input("Digite um número: "))
-    if x % 2 == 0:
-        par += tuple([x])
-    n += (x,)
+    n += tuple([x])
 print(f"Você digitou os números: {n}")
 print("A) Quantas vezes apareceu o valor 9?")
 if 9 in n:
@@ -25,8 +22,7 @@ if 3 in n:
 else:
     print("Não possui o número 3.")
 print("c) Quais foram os números pares?")
-if par == 0:
-    print("Não possui nenhum número par.")
-else:
-    print(f"Os números pares foram {par}")
-print("Finalizando...")
+for p in n:
+    if p % 2 == 0:
+        print(p, end=" ")
+print("\nFinalizando...")
