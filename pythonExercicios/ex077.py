@@ -6,9 +6,7 @@ Depois disso, você deve mostrar, para cada palavra, quais são suas vogais.
 palavras = ("aprender", "Programar", "Linguagem","Python")
 print(palavras)
 for palavras in palavras:
-    m = palavras.upper()
-    v = " "
+    print(f"\nVogais em {palavras.upper()}: ", end="")
     for l in palavras:
-        if l in 'aeiou':
-            v += l
-    print(f"Vogais em {m}: {v}")
+        if l.lower() in 'aeiou':
+            print(l, end=" ")
