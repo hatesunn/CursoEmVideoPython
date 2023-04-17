@@ -4,9 +4,24 @@ N final, mostre qual foi o maior e o menor valor digitado e as suas respectivas 
 """
 
 lista = []
+max = min = 0
 for l in range(5):
-    n = int(input("Digite um número: "))
-    lista.append(n)
+    lista.append(int(input(f"Digite número na posição {l}: ")))
+    if l == 0:
+        max = min = lista[l]
+    else:
+        if lista[l] > max:
+            max = lista[l]
+        if lista[l] < min:
+            min = lista[l]
 print(f"Os números digitados foram: {lista}")
-print(f"O maior número foi {max(lista)} na posição {lista.index(max(lista))}ª")
-print(f"O menor número foi {min(lista)} na posição {lista.index(min(lista))}ª")
+print(f"O maior número foi {max} nas posições: ", end="")
+for i, v in enumerate(lista):
+    if v == max:
+        print(f"{i}...", end="")
+print()
+print(f"O menor número foi {min} nas posições: ", end="")
+for i, v in enumerate(lista):
+    if v == min:
+        print(f"{i}...", end="")
+print()
