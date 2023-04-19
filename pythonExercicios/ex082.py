@@ -12,6 +12,7 @@ while True:
     if c == 2:
         break
     n = int(input("Digite um número: "))
+    lista.append(n)
     if n % 2 == 0:
         lista_par.append(n)
     else:
@@ -24,6 +25,7 @@ Deseja adicionar outro número?
 """))
         if c == 1:
             break
+print(f"A lista de números digitados foram:\n{lista}")
 print(f"Lista de números ímpares:\n{lista_impar}")
 print(f"Lista de números pares:\n{lista_par}")
     
