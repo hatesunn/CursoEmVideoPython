@@ -13,6 +13,5 @@ for n in range(7):
         lista[1].append(num)
 par.sort()
 impar.sort()
-print(lista)
 print(f"Os números pares digitados foram: {par}")
 print(f"Os números ímpares digitadso foram: {impar}")
