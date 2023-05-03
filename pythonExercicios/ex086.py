@@ -14,9 +14,7 @@ for i in range(3):
         i = int(input(f"Digite um valor para [{x}, {i}]: "))
         num[x].append(i)
     x += 1
-print(f"""
-[ {num[0][0]} ] [ {num[0][1]}  ] [ {num[0][2]} ]
-[ {num[1][0]} ] [ {num[1][1]}  ] [ {num[1][2]} ]
-[ {num[2][0]} ] [ {num[2][1]}  ] [ {num[2][2]} ]
-"""
-)
+for l in range(0,3):
+    for c in range(0,3):
+        print(f"[{num[l][c]:^5}]", end="")
+    print()
