@@ -21,3 +21,4 @@ for i in range(jogos):
     print(f"Jogo {i+1}: {num_sorteados}")
     num_sorteados.clear()
     sp(1.3)
+print("Boa sorte!")
